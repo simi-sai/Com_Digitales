@@ -34,11 +34,11 @@ $\int_{-\infin}^{0.5}f(y|H=1)dy = \int_{0.5}^{\infin}f(y|H=0)dy$
 
 para calcular el error necesitamos el area desde el valor critico multiplicada por la probabilidad de la fuente:
 
-![alt text](image.png)
+![alt text](Imagenes/image.png)
 
 **La funcion Q**: 
 se utiliza para calcular el area de una Gaussiana desde un valor x al infinito(???)
 
-![alt text](image-1.png)
+![alt text](Imagenes/image-1.png)
 
 Variable aleatoria Gaussiana: $\mathcal{N}(media,varianza)$

@@ -5,20 +5,20 @@ Repaso leve de Teoria de Señales (mal) -> Ortogonalidad, Bases y nosequemas.
 Vector aleatorio Gaussiano. $\mathbb{R}^2 \to \mathbb{R}$
 
 **Multivariate Normal Distribution**:
-![Multivariante Normal Gaussiana](image-2.png)
+![Multivariante Normal Gaussiana](Imagenes/image-2.png)
 
 Terminamos de ver el capitulo 2.
 
 ## Capitulo 3
 
 Empezamos a ver el tiempo Continuo.
-![Transmisor-Receptor (continua)](image-3.png)
+![Transmisor-Receptor (continua)](Imagenes/image-3.png)
 
 Ruido Gaussiano Blanco:
 
 $Z(t) = \int N(\alpha)h(t-\alpha)d\alpha \\ Z(t_i) = \int N(\alpha)h(t_i-\alpha)d\alpha$
 
-![alt text](image-4.png)
+![alt text](Imagenes/image-4.png)
 
 $Z = [Z_1,Z_2,...,Z_n]$
 
@@ -51,7 +51,7 @@ $\begin{bmatrix}
 \end{bmatrix}^{= \frac{N_0}{2}\lang \rho_i(t),\rho_i(t) \rang}$
 
 Arquitectura del Transmisor-Receptor:
-![alt text](image-5.png)
+![alt text](Imagenes/image-5.png)
 
 NOTA:
 

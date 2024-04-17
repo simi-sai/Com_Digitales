@@ -14,7 +14,7 @@ Nos vamos a mover en el dominio de las variables Gaussianas.
 
 *Si tengo un vector no gaussiano con covarianza identidad NO puedo asegurar independencia*.
 
-![Comunicaciones en Tiempo Continuo](image-6.png)
+![Comunicaciones en Tiempo Continuo](Imagenes/image-6.png)
 
 En este caso el receptor es un filtro, y el filtro está formado por funciones ortogonales.
 
@@ -24,11 +24,11 @@ Las componentes de la Covarianza: $\frac{N_0}{2}\lang g_i,g_j\rang$, siendo $g_i
 
 $\operatorname{cov}^{\mathbb{n}\times\mathbb{n}} = \begin{bmatrix} ... \end{bmatrix}$
 
-![alt text](image-7.png)
+![alt text](Imagenes/image-7.png)
 
 Nos vamos al transmisor y receptor descompuesto en partes:
 
-![alt text](image-5.png)
+![alt text](Imagenes/image-5.png)
 
 $H_i \rightarrow w_i(t) = \sum_{k=1}^{n}c_k \cdot \psi_k(t)$
 
@@ -38,13 +38,13 @@ Una waveform particular, llevará una combinacion de coeficientes, una combinaci
 
 $H_i \rightarrow w_i(t) = \sum_{k=1}^{n}c_{i,k} \cdot \psi_k(t)$
 
-![alt text](image-8.png)
+![alt text](Imagenes/image-8.png)
 
 Estamos con la señal, ruido $R(t)=0$, la proyecto sobre la base usando el integrador. Esto es $\int{w_i(t) \psi_1(t)dt} = c_{i,1}$ (usamos $w_i(t)$ porque tomamod al ruido como nulo)
 
-![alt text](image-9.png)
+![alt text](Imagenes/image-9.png)
 
-![alt text](image-10.png)
+![alt text](Imagenes/image-10.png)
 *(aclaración: no es phi es psi)*
 
 En este caso $c_{i,1}$ ya se considera en tiempo discreto.
