@@ -30,7 +30,7 @@ $w_0(t) = \sqrt{\varepsilon} \cdot \psi_0(t)$
 
 $w_1(t) = \sqrt{\varepsilon} \cdot \psi_1(t)$
 
-    En todas estas configuraciones la probabilidad de error es la misma.
+>En todas estas configuraciones la probabilidad de error es la misma.
 
 ### *Elección 3: (Sinc pulse position modulation)*
 
@@ -80,4 +80,4 @@ $\lang y,c_i \rang = \sum y_i \cdot c_{i,j} = \underset{j}\sum \int r(t) \cdot \
 
 {\|y-c_0\|}^2 - N_0\cdot Ln P_H(0) \underset{H = 0}\overset{H = 1} Corregir
 
-    Las señales son ortogonales, las bases son ortonormales y las palabras codigo son ortogonales.
+>Las señales son ortogonales, las bases son ortonormales y las palabras codigo son ortogonales.

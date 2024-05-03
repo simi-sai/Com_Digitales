@@ -55,4 +55,4 @@ Arquitectura del Transmisor-Receptor:
 
 NOTA:
 
-    La varianza de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.
+La varianza de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.
