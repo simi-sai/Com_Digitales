@@ -5,6 +5,7 @@ Repaso leve de Teoria de Señales (mal) -> Ortogonalidad, Bases y nosequemas.
 Vector aleatorio Gaussiano. $\mathbb{R}^2 \to \mathbb{R}$
 
 **Multivariate Normal Distribution**:
+
 ![Multivariante Normal Gaussiana](Imagenes/image-2.png)
 
 Terminamos de ver el capitulo 2.
@@ -12,6 +13,7 @@ Terminamos de ver el capitulo 2.
 ## Capitulo 3
 
 Empezamos a ver el tiempo Continuo.
+
 ![Transmisor-Receptor (continua)](Imagenes/image-3.png)
 
 Ruido Gaussiano Blanco:
@@ -40,7 +42,7 @@ $Z_n,...,Z_k = Z$
 
 Luego: $Z = (Z_1,...,Z_k)^T$
 
-Matriz de Covarianza:
+### Matriz de Covarianza:
 
 $\begin{bmatrix}
     \operatorname{cov}(Z_1,Z_1) & \operatorname{cov}(Z_1,Z_2)\\
@@ -50,9 +52,10 @@ $\begin{bmatrix}
     \phi & \sigma_2^2=N_0/2
 \end{bmatrix}^{= \frac{N_0}{2}\lang \rho_i(t),\rho_i(t) \rang}$
 
-Arquitectura del Transmisor-Receptor:
+### Arquitectura del Transmisor-Receptor
+
 ![alt text](Imagenes/image-5.png)
 
 NOTA:
 
-La varianza de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.
+La varianza/desviacion estandar de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.

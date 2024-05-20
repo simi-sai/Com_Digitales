@@ -16,13 +16,13 @@ $y\nearrow\downarrow Z = y - c_i\\\longrightarrow\\c_i$
 
 $Z = \{Z_1,Z_2,...,Z_n\}$ Ruido
 
-$Z_i=\lang N,\sigma_i \rang$
+$Z_i=\langle N,\sigma_i \rangle$
 
-$\|a\|^2 = \lang a,a \rang$
+$\|a\|^2 = \langle a,a \rangle$
 
-$\lang a,b \rang = a \cdot b = \|a\| \|b\| \cos(\angle{ab})$
+$\langle a,b \rangle = a \cdot b = \|a\| \|b\| \cos(\angle{ab})$
 
-$\|a-b\|^2 = \lang a-b,a-b \rang = \lang a-b,a \rang -\lang a-b,b\rang = \lang a,a \rang - \lang b,a \rang - \lang a,b \rang + \lang b,b \rang$
+$\|a-b\|^2 = \langle a-b,a-b \rangle = \langle a-b,a \rangle -\langle a-b,b\rangle = \langle a,a \rangle - \langle b,a \rangle - \langle a,b \rangle + \langle b,b \rangle$
 
 ### III
 
@@ -30,7 +30,7 @@ $\|a-b\|^2 = \lang a-b,a-b \rang = \lang a-b,a \rang -\lang a-b,b\rang = \lang a
 
 ![alt text](Imagenes/image-17.png)
 
-Si $a$ es complejo la norma de a al cuadrado $\|a\|^2$ es igual a $\lang a,a^* \rang$ siendo $a^*$ el vector conjugado.
+Si $a$ es complejo la norma de a al cuadrado $\|a\|^2$ es igual a $\langle a,a^* \rangle$ siendo $a^*$ el vector conjugado.
 
 Muestreo filtrado. (??)
 

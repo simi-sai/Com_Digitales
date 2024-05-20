@@ -80,3 +80,14 @@ $ ... \rightarrow \begin{bmatrix} \operatorname{cov}(z_1,z_1) & \operatorname{co
 Lo que se hace en el encoder es la sumatoria de vectores (o señales) multiplicados por una constante, por ende es la combinacion lineal de vectores.
 
 Si las funciones $\psi$ son ortonormales, el ruido recibido por el receptor seguirá siendo ruido gaussiano con valor $\frac{N_0}{2}$.
+
+bit error rate para una modulación antipodal:
+
+```python
+import numpy as np
+from scipy.stats import norm
+kb=1.381e-23
+def BER(pt,lda,gt,gr,d,tn,rb):
+    arg=(1/(rb*1000)*(gt*gr*pt)/((4*3.14*d*1000/lda)**2*tn*kb))
+    return(np.round(norm.sf(np.sqrt(2*arg)),4))
+```
