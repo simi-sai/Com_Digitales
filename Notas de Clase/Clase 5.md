@@ -1,6 +1,6 @@
 # Quinta Clase 03/04
 
-Repaso leve de Teoria de Señales (mal) -> Ortogonalidad, Bases y nosequemas.
+Repaso leve de Teoria de Señales -> Ortogonalidad, Bases y nose que mas.
 
 Vector aleatorio Gaussiano. $\mathbb{R}^2 \to \mathbb{R}$
 
@@ -14,16 +14,31 @@ Terminamos de ver el capitulo 2.
 
 Empezamos a ver el tiempo Continuo.
 
-![Transmisor-Receptor (continua)](Imagenes/image-3.png)
+### Comunicacion a traves del canal AWGN
+
+![Transmisor-Receptor (continua)](Imagenes/image-6.png)
+
+![alt text](image.png)
 
 Ruido Gaussiano Blanco:
+
+Teniendo en cuenta:
+
+- $N(t)$ = ruido blanco Gaussiano
+- $Z(t)$ = version filtrada / aproximacion stadistica
+- $h(t)$ = respuesta al impulso del filtro
 
 $Z(t) = \int N(\alpha)h(t-\alpha)d\alpha \\ Z(t_i) = \int N(\alpha)h(t_i-\alpha)d\alpha$
 
 ![alt text](Imagenes/image-4.png)
 
-$Z = [Z_1,Z_2,...,Z_n]$
+$N(t)$ es la funcion ruido blanco Gaussiano, de densidad espectral de potencia $\frac{N_0}{2}$ si por cada coleccion finita de funciones realmenta vauladas $\mathcal{L_2} = g_1(\alpha),...,g_k(\alpha)$
 
+$$Z_i = \int N(\alpha)g_i(\alpha)d\alpha, \quad i = 1,2,...,k$$
+
+es una coleccion de variables aleatorias conjuntamente gaussianas de media zero y covarianza (imagen).
+
+$Z = [Z_1,Z_2,...,Z_n]$
 $E_{[Z]}=[E_{[Z_1]},E_{[Z_2]},...,E_{[Z_n]}] = [0,0,0]$
 
 $\operatorname{cov}(Z_i,Z_j) = \frac{N_0}{2}\langle g_i,g_j \rangle$
@@ -42,7 +57,7 @@ $Z_n,...,Z_k = Z$
 
 Luego: $Z = (Z_1,...,Z_k)^T$
 
-### Matriz de Covarianza:
+### Matriz de Covarianza
 
 $\begin{bmatrix}
     \operatorname{cov}(Z_1,Z_1) & \operatorname{cov}(Z_1,Z_2)\\
@@ -58,4 +73,4 @@ $\begin{bmatrix}
 
 NOTA:
 
-La varianza/desviacion estandar de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.
+>La varianza/desviacion estandar de una señal aleatoria es la potencia de la señal, y la podemos utilizar para normalizar la señal recibida.

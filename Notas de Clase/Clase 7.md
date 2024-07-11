@@ -81,3 +81,23 @@ $\lang y,c_i \rang = \sum y_i \cdot c_{i,j} = \underset{j}\sum \int r(t) \cdot \
 {\|y-c_0\|}^2 - N_0\cdot Ln P_H(0) \underset{H = 0}\overset{H = 1} Corregir
 
 >Las señales son ortogonales, las bases son ortonormales y las palabras codigo son ortogonales.
+
+Codigo Raiz Coseno Realzado:
+
+```python
+import numpy as np
+
+def rrcosfilter(t, beta, Ts,iT):    
+    return 1/np.sqrt(Ts) * np.sinc((t-iT)/Ts) * np.cos(np.pi*beta*(t-iT)/Ts) / (1 - (2*beta*(t-iT)/Ts) ** 2)
+
+def raiz_coseno_realzado(simbolos, Beta, T, tt):
+  sum_sig = 0
+  signal = []
+
+  for i in range(len(simbolos)):
+    signal.append(simbolos[i]*rrcosfilter(tt,Beta,T,i*T))
+    sum_sig = sum_sig + signal[i] 
+    #plt.plot(tt,output[i]) 
+  return sum_sig,signal    
+
+```

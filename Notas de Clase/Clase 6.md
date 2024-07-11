@@ -65,15 +65,15 @@ $H \in \{0,1,2,3\} \rightarrow
 
 $c_{i,1} \times \psi_1(t) \searrow \\ \qquad \qquad \qquad\sum \rightarrow w_i(t) \\ c_{i,2} \times \psi_2(t) \nearrow$
 
-$ \qquad \quad \times \psi_1(t) \rightarrow c_{i,1}\\ w_i(t)^{\nearrow}_{\searrow} \\ \qquad \quad \times \psi_2(t) \rightarrow c_{i,2}$
+$\qquad \quad \times \psi_1(t) \rightarrow c_{i,1}\\ w_i(t)^{\nearrow}_{\searrow} \\ \qquad \quad \times \psi_2(t) \rightarrow c_{i,2}$
 
 Ahora, al tener ruido y proyectarlo sobre la base ortonormal, obtengo 2 componentes de ruido. Por ende ahora:
 
-$ \rightarrow c_{i,1} + z_1 = Y_{i,1} \\ \rightarrow c_{i,2} + z_2 = Y_{i,2}$
+$\rightarrow c_{i,1} + z_1 = Y_{i,1} \\ \rightarrow c_{i,2} + z_2 = Y_{i,2}$
 
-$\operatorname{cov}(z_i,z_j) = \lang Z_i, Z_j \rang = \frac{N_0}{2} \lang \psi_i,\psi_j \rang \rightarrow ...$
+$\operatorname{cov}(z_i,z_j) = \lang Z_i, Z_j \rang = \frac{N_0}{2} \lang \psi_i,\psi_j \rang \rightarrow$
 
-$ ... \rightarrow \begin{bmatrix} \operatorname{cov}(z_1,z_1) & \operatorname{cov}(z_1,z_2) \\ \operatorname{cov}(z_2,z_1) & \operatorname{cov}(z_2,z_2)\end{bmatrix} = \begin{bmatrix} \frac{N_0}{2} & 0 \\ 0 & \frac{N_0}{2} \end{bmatrix}$
+$\rightarrow \begin{bmatrix} \operatorname{cov}(z_1,z_1) & \operatorname{cov}(z_1,z_2) \\ \operatorname{cov}(z_2,z_1) & \operatorname{cov}(z_2,z_2)\end{bmatrix} = \begin{bmatrix} \frac{N_0}{2} & 0 \\ 0 & \frac{N_0}{2} \end{bmatrix}$
 
 ## Práctico
 
@@ -89,5 +89,5 @@ from scipy.stats import norm
 kb=1.381e-23
 def BER(pt,lda,gt,gr,d,tn,rb):
     arg=(1/(rb*1000)*(gt*gr*pt)/((4*3.14*d*1000/lda)**2*tn*kb))
-    return(np.round(norm.sf(np.sqrt(2*arg)),4))
+    return np.round(norm.sf(np.sqrt(2*arg)),4)
 ```
